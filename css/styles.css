@@ -1,0 +1,117 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Inter&display=swap');
+
+
+/*ALL ELEMENTS*/
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    
+}
+/* CARD */
+.card {
+    width: 25rem;
+    padding: 0rem 3rem;
+    border-radius: 30px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.5046393557422969) 100%);
+     /* JS ANIMATION*/
+     transform-style: preserve-3d;
+     perspective: 1000px;
+    
+}
+
+/* CIRCLE */
+.circle img {
+    width:50%;
+    height:50%;
+    border-radius: 50%;
+    
+}
+/*SHADOW FOR THE IMAGE*/
+.circle {
+    width: 230px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: -200px;
+    position: fixed;  
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.5046393557422969) 100%);
+    box-shadow: 4px 4px #4a4be7;
+}
+
+/* CARD INFORMATION */
+.info {
+    text-align: center;
+}
+.info h1{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: white;
+    /* top right bottom left*/
+    padding: 0 0 20px 0;
+    transform: all 0.75s ease-out;
+}
+
+.info h4 {
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    color: white;
+    /* top right bottom left*/ 
+    padding: 0 0 20px 0;
+    transform: all 0.75s ease-out;
+}
+
+
+/* SOCIAL MEDIA ICON */
+.sm-icon {
+    /* top right bottom left*/ 
+    padding: 20px 15px 0 0;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transform: all 0.75s ease-out;
+}
+
+/* PROFILE */
+.profile {
+    /* top right bottom left*/ 
+    margin: 20px 0 20px 0;
+    transform: all 0.75s ease-out;  
+}
+.profile button {
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+/* PHOTO */
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.photo img {
+    width: 200px;
+    border-radius: 50%;
+    /*top right bottom left*/ 
+    margin: 20px 40px 60px 40px;
+    transform: all 0.75s ease-out;
+}
